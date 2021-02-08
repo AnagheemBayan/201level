@@ -7,7 +7,7 @@ let userName = prompt('Tell me your name')
 
 let myMajor = prompt( userName +' ' +' Did you think I studied MIS ?') ;
 
- console.log(myMajor.toLowerCase());
+  //console.log(myMajor.toLowerCase());
  myMajor = myMajor.toLowerCase();
 
 if (myMajor ==='yes' || myMajor==='y'){
@@ -16,7 +16,7 @@ alert(' yes my major is MIS')
   alert('No, is MIS')
 }
 let comFrom = prompt ( userName + ' ' +'Did you think I lived in safad ?');
-console.log(comFrom.toLowerCase());
+//console.log(comFrom.toLowerCase());
 comFrom= comFrom.toLowerCase();
 
 if ( comFrom === 'yes' || comFrom === 'y')
@@ -31,7 +31,7 @@ else
 
 }
 let myPosition = prompt( userName + ' '+ ' Are my Position now A software Developer ?');
-console.log(myPosition.toLowerCase());
+//console.log(myPosition.toLowerCase());
 
 myPosition = myPosition.toLowerCase();
 
@@ -46,7 +46,7 @@ else
 
 let myknowldg = prompt( userName + ''+ ' I have a some knowledge in QA ?');
 
-console.log(myknowldg.toLowerCase);
+//console.log(myknowldg.toLowerCase);
 
 myknowldg = myknowldg.toLowerCase();
 
@@ -60,7 +60,7 @@ else
 
 let myUni = prompt ( userName + ''+ '  Did I graduates from Yarmouk University? ');
 
-console.log(myUni.toLowerCase());
+//console.log(myUni.toLowerCase());
 
 myUni = myUni.toLowerCase();
 
