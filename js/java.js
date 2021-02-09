@@ -1,5 +1,5 @@
 'use strict';
-
+let score=0;
 let userName = prompt('Tell me your name')
 
 //alert('Hi' +' ' + userName + ' '+  'There is a few  Question to go inside my page ');
@@ -11,7 +11,9 @@ let myMajor = prompt( userName +' ' +' Did you think I studied MIS ?') ;
  myMajor = myMajor.toLowerCase();
 
 if (myMajor ==='yes' || myMajor==='y'){
+    score ++ ;
 alert(' yes my major is MIS')
+
 } else {
   alert('No, is MIS')
 }
@@ -22,6 +24,7 @@ comFrom= comFrom.toLowerCase();
 if ( comFrom === 'yes' || comFrom === 'y')
 
 {
+    score ++ ;
     alert('ooh no I born and lived in Irbid ')
 }
 
@@ -36,6 +39,7 @@ let myPosition = prompt( userName + ' '+ ' Are my Position now A software Develo
 myPosition = myPosition.toLowerCase();
 
 if (myPosition === 'yes'|| myPosition === 'y'){
+    score ++ ;
     alert(' ya my position now is software developer')
 }
 
@@ -51,6 +55,7 @@ let myknowldg = prompt( userName + ''+ ' I have a some knowledge in QA ?');
 myknowldg = myknowldg.toLowerCase();
 
 if (myknowldg === 'yes'|| myknowldg === 'y'){
+    score ++ ;
     alert( ' oh that is right ')
 }
 else
@@ -66,6 +71,7 @@ myUni = myUni.toLowerCase();
 
 if (myUni === 'yes' || myUni === 'y')
 {
+    score ++ ;
     alert(' that is right ')
 
 }
@@ -78,6 +84,78 @@ else
 alert( 'Now you are welcome to my page  ' +''+  userName)
 
 
+
+let myGpa = prompt(' what is my GPA ??')
  
+myGpa = parseInt(myGpa) ;
  
+ if (myGpa === 79){
+    score ++ ;
+     alert('my GPA is correct ');
+ }
+ else{
+
+ 
+ for(let i =1 ; i<= 4 ; i++)
+ {
+
+    if ( myGpa > 79 )
+    {
+        alert('Higher than my GPA');
+        myGpa=prompt('Try Again')
+    }
+
+
+     
+    else if (myGpa <79 ){
+        alert('Less than my GPA ');
+        myGpa= prompt('Try Again');
+
+    }
+
+    if (myGpa === 79 ){
+        score ++ ;
+       break;
+    }
+}
+
+
+
+   
+        alert('ok ... my GPA is = 79');
+    
+
+    
+
+ }
+
+
+
+
+let mySeson = ['winter', 'summer', 'spring','autumn'];
+for(let i = 0 ; i < 6 ; i++){
+    let userInput = prompt('can you guess my favourite seson ?')
+    let Guess = userInput.toLocaleLowerCase();
+
+    for(let j = 0; j<mySeson.length;j++)
+    {
+        if(Guess=== mySeson[j]){
+
+            alert('that is correct');
+            score++;
+            i = 6 ;
+            break;
+
+        }
+    }
+    if (i !== 6){
+        alert('Wrong Answer ');
+
+    }
+}
+
+alert(' my  seson are : winter , summer, spring, autumn ');
+
+alert('you got '   + score + ' of seven Q  '+ 'congrats! ');
+
 
