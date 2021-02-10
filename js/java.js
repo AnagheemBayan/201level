@@ -1,10 +1,13 @@
 'use strict';
 let score=0;
+function userName(){
 let userName = prompt('Tell me your name')
 
 //alert('Hi' +' ' + userName + ' '+  'There is a few  Question to go inside my page ');
+}
+userName();
 
-
+function myMajor(){
 let myMajor = prompt( userName +' ' +' Did you think I studied MIS ?') ;
 
   //console.log(myMajor.toLowerCase());
@@ -17,6 +20,10 @@ alert(' yes my major is MIS')
 } else {
   alert('No, is MIS')
 }
+}
+myMajor();
+
+function comFrom(){
 let comFrom = prompt ( userName + ' ' +'Did you think I lived in safad ?');
 //console.log(comFrom.toLowerCase());
 comFrom= comFrom.toLowerCase();
@@ -33,6 +40,9 @@ else
      alert('correct i live in irbid ')
 
 }
+}
+comFrom();
+function myPosition(){
 let myPosition = prompt( userName + ' '+ ' Are my Position now A software Developer ?');
 //console.log(myPosition.toLowerCase());
 
@@ -47,7 +57,9 @@ else
 {
     alert(' you failed here ')
 }
-
+}
+myPosition();
+function myknowldg(){
 let myknowldg = prompt( userName + ''+ ' I have a some knowledge in QA ?');
 
 //console.log(myknowldg.toLowerCase);
@@ -62,7 +74,9 @@ else
 {
     alert('incorrect , i have a course in QA ')
 }
-
+}
+myknowldg();
+function myUni(){
 let myUni = prompt ( userName + ''+ '  Did I graduates from Yarmouk University? ');
 
 //console.log(myUni.toLowerCase());
@@ -80,11 +94,13 @@ else
 {
     alert('that is wrong  my university is YU ')
 }
+}
+myUni();
 
 alert( 'Now you are welcome to my page  ' +''+  userName)
 
 
-
+function myGpa(){
 let myGpa = prompt(' what is my GPA ??')
  
 myGpa = parseInt(myGpa) ;
@@ -128,11 +144,13 @@ myGpa = parseInt(myGpa) ;
     
 
  }
-
+}
+myGpa();
 
 
 
 let mySeson = ['winter', 'summer', 'spring','autumn'];
+function mySeson(mySeson){
 for(let i = 0 ; i < 6 ; i++){
     let userInput = prompt('can you guess my favourite seson ?')
     let Guess = userInput.toLocaleLowerCase();
@@ -142,17 +160,22 @@ for(let i = 0 ; i < 6 ; i++){
         if(Guess=== mySeson[j]){
 
             alert('that is correct');
-            score++;
-            i = 6 ;
-            break;
+            
+        score++;
+        i=6;    
+        break;
 
         }
     }
-    if (i !== 6){
-        alert('Wrong Answer ');
+    if(i!==6) {
+       alert('wrong answer');
+      break;
 
     }
 }
+return mySeson;
+}
+mySeson(mySeson);
 
 alert(' my  seson are : winter , summer, spring, autumn ');
 
