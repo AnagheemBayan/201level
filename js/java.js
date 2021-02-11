@@ -4,20 +4,20 @@
 let score = 0;
 let userName = prompt('Tell me your name')
 
- function user (){
-   //let userName = prompt('Tell me your name')
+function user() {
+    //let userName = prompt('Tell me your name')
 
     alert('Now you are welcome to my page  ' + '' + userName)
-  
-
- }
- user();
 
 
+}
+user();
 
 
-function major (){
- 
+
+
+function major() {
+
     let myMajor = prompt(userName + ' ' + ' Did you think I studied MIS ?');
 
     //console.log(myMajor.toLowerCase());
@@ -35,18 +35,19 @@ function major (){
 major();
 
 
-function from (){
- 
-    let comFrom = prompt(userName+ ' ' + 'Did you think I lived in safad ?');
+function from() {
+
+    let comFrom = prompt(userName + ' ' + 'Did you think I lived in safad ?');
     //console.log(comFrom.toLowerCase());
     comFrom = comFrom.toLowerCase();
 
     if (comFrom === 'yes' || comFrom === 'y') {
-        score++;
+        //score++;
         alert('ooh no I born and lived in Irbid ')
     }
 
     else {
+        score++;
         alert('correct i live in irbid ')
 
     }
@@ -56,7 +57,7 @@ function from (){
 
 from();
 
-   function position(){
+function position() {
     let myPosition = prompt(userName + ' ' + ' Are my Position now A software Developer ?');
     //console.log(myPosition.toLowerCase());
 
@@ -81,8 +82,8 @@ position();
 
 
 
-function knowledge (){
- 
+function knowledge() {
+
     let myknowldg = prompt(userName + '' + ' I have a some knowledge in QA ?');
 
     //console.log(myknowldg.toLowerCase);
@@ -101,7 +102,7 @@ function knowledge (){
 knowledge();
 
 
- function university (){
+function university() {
     let myUni = prompt(userName + '' + '  Did I graduates from Yarmouk University? ');
 
     //console.log(myUni.toLowerCase());
@@ -118,99 +119,79 @@ knowledge();
         alert('that is wrong  my university is YU ')
     }
 
- }
+}
 
- university();
-
-
-
-
-   function gpa (){
-
-   
-    let myGpa = prompt(' what is my GPA ??')
-
-    myGpa = parseInt(myGpa);
-
-    if (myGpa === 79) {
-        score++;
-        alert('my GPA is correct ');
-    }
-    else {
-
-
-        for (let i = 1; i <= 4; i++) {
-
-            if (myGpa > 79) {
-                alert('Higher than my GPA');
-                myGpa = prompt('Try Again')
-            }
+university();
 
 
 
-            else if (myGpa < 79) {
-                alert('Less than my GPA ');
-                myGpa = prompt('Try Again');
+function gpa() {
 
-            }
 
-            if (myGpa === 79) {
+
+
+        let myGrade = 79;
+        for (let i = 0; i <= 3; i++) {
+            let guess = prompt('what my GPA ?');
+
+            if (parseInt(guess) === myGrade) {
+                alert('thats right')
                 score++;
                 break;
+            } else if (parseInt(guess) < myGrade) {
+                alert('too low')
+            } else if (parseInt(guess) > myGrade) {
+                alert('too high')
+            } else {
+                alert('Invalied Input ' )
             }
-            
+            //console.log(guess);
         }
-       
+        alert(myGrade)
 
 
-        
-
-
-        alert('ok ... my GPA is = 79');
-
-
-    }
 
 
     }
     gpa();
 
-  function sesson (){
+    function sesson() {
 
-let flag = false ;
+        let flag = false;
 
-    for (let i = 0; i < 6; i++)
-     {
-        let mySeson = ['winter', 'summer', 'spring', 'autumn'];
-        let userInput = prompt('can you guess my favourite seson ?')
-        let Guess = userInput.toLocaleLowerCase();
+        for (let i = 0; i < 6; i++) {
+            let mySeson = ['winter', 'summer', 'spring', 'autumn'];
+            let userInput = prompt('can you guess my favourite seson ?')
+            let Guess = userInput.toLocaleLowerCase();
 
-        for (let j = 0; j < mySeson.length; j++) {
-            if (Guess === mySeson[j]) {
+            for (let j = 0; j < mySeson.length; j++) {
+                if (Guess === mySeson[j]) {
 
-                alert('that is correct');
-                 flag= true ;
-                score++;
-                
+                    alert('that is correct');
+                    flag = true;
+                    score++;
+
+                    break;
+
+                }
+            }
+            if (flag === true) {
+                //alert('wrong answer');
                 break;
 
             }
         }
-        if (flag === true) {
-            //alert('wrong answer');
-            break;
 
-        }
+
+
+
+        alert(' my  seson are : winter , summer, spring, autumn ');
+
+        alert('you got ' + score + ' of seven Q  ' + 'congrats! ');
+
+
     }
 
 
-
-
-alert(' my  seson are : winter , summer, spring, autumn ');
-
-alert('you got ' + score + ' of seven Q  ' + 'congrats! ');
-
-
-}
 sesson();
- 
+
