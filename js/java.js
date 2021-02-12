@@ -5,7 +5,7 @@ let score = 0;
 let userName = prompt('Tell me your name')
 
 function user() {
-    //let userName = prompt('Tell me your name')
+    
 
     alert('Now you are welcome to my page  ' + '' + userName)
 
@@ -20,7 +20,7 @@ function major() {
 
     let myMajor = prompt(userName + ' ' + ' Did you think I studied MIS ?');
 
-    //console.log(myMajor.toLowerCase());
+    
     myMajor = myMajor.toLowerCase();
 
     if (myMajor === 'yes' || myMajor === 'y') {
@@ -38,11 +38,11 @@ major();
 function from() {
 
     let comFrom = prompt(userName + ' ' + 'Did you think I lived in safad ?');
-    //console.log(comFrom.toLowerCase());
+    
     comFrom = comFrom.toLowerCase();
 
     if (comFrom === 'yes' || comFrom === 'y') {
-        //score++;
+    
         alert('ooh no I born and lived in Irbid ')
     }
 
@@ -59,7 +59,7 @@ from();
 
 function position() {
     let myPosition = prompt(userName + ' ' + ' Are my Position now A software Developer ?');
-    //console.log(myPosition.toLowerCase());
+    
 
     myPosition = myPosition.toLowerCase();
 
@@ -86,7 +86,7 @@ function knowledge() {
 
     let myknowldg = prompt(userName + '' + ' I have a some knowledge in QA ?');
 
-    //console.log(myknowldg.toLowerCase);
+
 
     myknowldg = myknowldg.toLowerCase();
 
@@ -105,7 +105,7 @@ knowledge();
 function university() {
     let myUni = prompt(userName + '' + '  Did I graduates from Yarmouk University? ');
 
-    //console.log(myUni.toLowerCase());
+
 
     myUni = myUni.toLowerCase();
 
@@ -145,7 +145,7 @@ function gpa() {
             } else {
                 alert('Invalied Input ' )
             }
-            //console.log(guess);
+        
         }
         alert(myGrade)
 
@@ -176,7 +176,7 @@ function gpa() {
                 }
             }
             if (flag === true) {
-                //alert('wrong answer');
+            
                 break;
 
             }
